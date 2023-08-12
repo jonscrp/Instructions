@@ -26,15 +26,51 @@ Double-click the installer so it opens once it's done downloading
 * Open Arduino IDE
 
 ***
-# Arduino Environment
+## Arduino Environment
 
 ![Arduino IDE](pictures/ArduinoIDE.png)
 
 ***
-# Installing Adafruit Packages and Libraries
+## Installing Adafruit Packages and Libraries
+
+Before you can run any programs on the Arduino you will need to install a few packages and libraries. Without these installations, your Arduino will not be able to run any programs.
 
 Copy this
 ```
  https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
- 
+On your Arduino IDE go to 
+
+   1. File >> Preferences
+
+   2. Paste the clipped link into **Additional boards manager URLs**.
+
+   2. Click **Ok**.
+
+## Downloading Arduino Board Library 
+
+  1. Go to Tools >> Board >> Board Manager 
+
+  2. Search SAMD and download **Adafruit SAMD Boards by Adafruit**
+
+## Downloading Other Libraries
+  1. Go to Tools >> Manage Libraries
+  2.  In the library manager search WiFi 101  and download **WiFi101 by Adafruit**
+  3.  Repeat step 2  and download the following libraries
+    * Adafruit Sleepy Dog 
+    * SparkFun_SCD30_Arduino_Library 
+    * Adafruit_GFX
+    * Adafruit_SSD1306
+    * Adafruit_BME280
+    * Adafruit_SH110X
+    * Sensirion I2C SEN5X
+
+ At this point, we have to download other libraries not available in the Library Manager
+  * [SP30.h by Paul van Haastrecht library](https://github.com/paulvha/sps30.git)
+  * [HoneywellTruStabilitySPI.h](https://github.com/huilab/HoneywellTruStabilitySPI.git)
+
+
+
+
+
+
